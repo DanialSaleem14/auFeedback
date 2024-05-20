@@ -1,0 +1,93 @@
+/* app2.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-page .video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure the video stays behind other content */
+  /* opacity: 50%; */
+}
+
+.auth-page .video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.auth-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-page .form-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  position: absolute;
+  left: 28rem;
+  top: 7rem;
+}
+
+.auth-page h2 {
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.auth-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-page input[type='email'],
+.auth-page input[type='password'] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.auth-page button[type='submit'] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-page button[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+.auth-page p {
+  text-align: center;
+}
+
+.auth-page p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-page p a:hover {
+  text-decoration: underline;
+}
+
+.auth-page .logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 150px;
+}
